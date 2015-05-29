@@ -1,0 +1,96 @@
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Open Sans', helvetica, sans-serif;
+	text-align: center;
+}
+p{
+	font: 16px Georgia, serif;
+	width:800px;
+	margin: 0 auto;
+}
+h1{
+	margin:0;
+	font-size:60px;
+	color: #222;
+	text-align: center;
+	
+}
+h2{
+	font-size:36px;
+}
+.subtitle{
+	text-align: center;
+	margin:0 auto;
+	font: 20px Georgia, serif;
+	color:#999;
+}
+img{
+	display:block;
+	margin:0 auto;
+	border: 1px solid #ccc;
+}
+figcaption{
+	display:block;
+	margin:0 auto;
+	font-family: 'Open Sans', helvetica, sans-serif;
+	color: #666;
+	font-size: 14px;
+	width:600px;
+}
+hr{
+	border-bottom:1px;
+	border-color: #ccc;
+	width:900px;
+	
+}
+.contents{
+	
+	display:block;
+	margin:0 0 0 400px;
+}
+.contents h3{
+	font-size: 14px;
+	color:#999;
+	font-family: 'Open Sans', helvetica, sans-serif;
+	margin-left: 40px;
+	text-align: left	
+}
+ol{
+	text-decoration: underline;
+}
+ol ol{
+	padding: 0px;
+}
+ol ol li{
+	text-indent: none;
+	list-style:none;
+}
+blockquote{
+	background:#f6f6f6;
+	border-left: 10px solid #e3e3e3;
+	font:20px georgia, serif;
+	font-color:#222;
+	width:900px;
+	margin:20px auto;
+}
+ul{
+	width:75%;
+	float:right;
+}
+
+.fifty{
+	width:50%;
+	float:left;
+}
+.fifty figure{
+	margin-right:none;
+}
+.fifty figcaption{
+	width:400px;
+}
+ul{
+	font:16px georgia,serif;
+	color:#222;
+}
+ul li{
+	margin:20px 0;
+}
