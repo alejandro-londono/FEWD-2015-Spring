@@ -2,8 +2,10 @@ h1,h2,h3,h4,h5,h6{
 	font-family: 'Open Sans', helvetica, sans-serif;
 	text-align: center;
 }
+body{
+	font: 16px georgia, serif;
+}
 p{
-	font: 16px Georgia, serif;
 	margin: 0 auto;
 	width:800px;
 }
@@ -11,16 +13,13 @@ h1{
 	color: #222;
 	font-size:60px;
 	margin:0;
-	text-align: center;
-	
 }
 h2{
 	font-size:36px;
 }
 .subtitle{
 	color:#999;
-	font: 20px Georgia, serif;
-	margin:0 auto;
+	font-size:20px;
 	text-align: center;	
 }
 img{
@@ -30,7 +29,6 @@ img{
 }
 figcaption{
 	color: #666;
-	display:block;
 	font-family: 'Open Sans', helvetica, sans-serif;
 	font-size: 14px;
 	margin:0 auto;
@@ -39,8 +37,7 @@ figcaption{
 hr{
 	border-bottom:1px;
 	border-color: #ccc;
-	width:900px;
-	
+	width:900px;	
 }
 .contents{
 	
@@ -50,7 +47,6 @@ hr{
 .contents h3{
 	color:#999;
 	font-size: 14px;
-	font-family: 'Open Sans', helvetica, sans-serif;
 	margin-left: 40px;
 	text-align: left	
 }
@@ -67,8 +63,8 @@ ol ol li{
 blockquote{
 	background:#f6f6f6;
 	border-left: 10px solid #e3e3e3;
-	font:20px georgia, serif;
-	font-color:#222;
+	font-size: 20px;
+	color:#222;
 	margin:20px auto;
 	width:900px;
 }
