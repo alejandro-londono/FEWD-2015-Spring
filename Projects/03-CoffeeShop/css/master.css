@@ -13,11 +13,19 @@
 		margin:10px auto;
 	}
 	div.info{
-		min-width: 300px
+		
 	}
 	div button{
 		display: block;
-  		margin: 20px auto;
+  		margin: 20px 0;
+	}
+	div.content{
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	div.shop{
+		margin-left: -23px
 	}
 }
 @media screen and (max-width: 540px){
@@ -30,6 +38,12 @@
 	}
 	div.content{
 		padding:100px 0;
+	}
+	tr.noborder{
+		border-bottom: 2px solid #9B761C;
+	}
+	.heading{
+		font-size:26px;
 	}
 }
 body{
@@ -56,6 +70,7 @@ h2{
 h3{
 	font-size: 26px;
 	color:#222;
+	text-align: left;
 }
 header{
 	background-image: url(../images/header.jpg);
@@ -68,20 +83,24 @@ header{
 button{
 	font-size: 16px;
 	padding:20px;
-	border:2px solid #AC8420;
+	border:3px solid #AC8420;
 	color: #AC8420;
-	border-radius: 4px;
 	background: #fff;
 	font-family: inherit;
 	margin-top: 50px;
 	margin-bottom:20px;
+	margin-left: 0px;
 }
-
+button:hover{
+	color:#fff;
+	background: #AC8420;
+}
 .menu{
 	background:#AC8420;
 	padding:50px 0;
 }
 footer{
+	font-size: 12px;
 	background:#222;
 	color:white;
 	text-transform: uppercase;
@@ -133,7 +152,8 @@ footer{
 	vertical-align: top;
 	text-align: left;
 	line-height:30px;
-	margin-right: 50px;
+	min-width: 300px;
+	margin-right: 5%
 }
 .hours-location{
 	margin:0 auto;
@@ -170,7 +190,7 @@ tr{
 }
 .content{
 	margin:0 auto;
-	padding:100px;
+	padding:100px 10%;
 	text-align: center;
 }
 .foot-pos{
@@ -182,4 +202,13 @@ tr{
 p a{
 	color:white;
 	text-decoration: none;
+}
+.noborder{
+	border:none;
+}
+.tel{
+	color:#666;
+}
+a:hover{
+	color:#F4B350;
 }
