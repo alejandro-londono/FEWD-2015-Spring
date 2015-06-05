@@ -1,0 +1,151 @@
+body{
+	font-family: 'Lato',helvetica, sans-serif;
+	margin:0;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Sanchez',Georgia, serif;
+	margin:inherit;
+	text-align:center;
+	display: block;
+}
+p{
+	margin: inherit;
+}
+h1{
+	color:#fff;
+	font-size: 60px;
+}
+h2{
+	font-size: 32px;
+	color:#222;
+}
+h3{
+	font-size: 26px;
+	color:#222;
+}
+header{
+	background-image: url(../images/header.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color:#fff;
+	position:relative;
+	padding-top: 150px;
+}
+button{
+	font-size: 16px;
+	padding:20px;
+	border:2px solid #AC8420;
+	color: #AC8420;
+	border-radius: 4px;
+	background: #fff;
+	font-family: inherit;
+	margin-top: 50px;
+	margin-bottom:20px;
+}
+
+.menu{
+	background:#AC8420;
+	padding:50px 0;
+}
+footer{
+	background:#222;
+	color:white;
+	text-transform: uppercase;
+	padding: 50px;
+	text-align: center;
+}
+.logo{
+	background-image: url(../images/logo_large.png);
+	background-repeat: no-repeat;
+	display: block;
+	width:100px;
+	height:99px;
+	overflow: hidden;
+	text-indent:100%;
+	white-space: nowrap;
+	margin:100px auto 0 auto;
+	top: 50%;
+	left: 50%;
+	
+}
+.logo-small{
+	background-image: url(../images/logo_small.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	width:50px;
+	height:50px;
+	overflow:hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	margin-left: 15%
+
+}
+.grey{
+	color:#666;
+	font-size: 16px;
+}
+.shop{
+	background-image: url(../images/location.jpg);
+	background-repeat: no-repeat;
+	width:300px;
+	height:300px;
+	overflow:hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	display:inline-block;
+}
+.info{
+	display:inline-block;
+	vertical-align: top;
+	text-align: left;
+	line-height:30px;
+	margin-right: 50px;
+}
+.hours-location{
+	margin:0 auto;
+}
+.intro{
+	width:500px;
+	display:block;
+	text-align: center;
+	margin: 0 auto;
+	padding-bottom: 100px;
+	
+}
+tr{
+	border-bottom: 2px solid #9B761C;
+	display: block;
+	padding: 10px;
+	font-size: 16px
+}
+.table{
+	column-count: 2;
+	-moz-column-count:2;
+	-webkit-column-count:2;
+	display:inline-block;
+	position: relative;
+	left:50%;
+	margin-left: -300px
+}
+.spaced{
+	width: 250px;
+	color:#fff;
+}
+.price{
+	color: #DECC9C;
+}
+.content{
+	margin:0 auto;
+	padding:100px;
+	text-align: center
+}
+.foot-pos{
+	display: inline-block;
+}
+.social{
+	margin-left: 10%;
+}
+p a{
+	color:white;
+	text-decoration: none;
+}
