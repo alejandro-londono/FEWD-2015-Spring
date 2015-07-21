@@ -29,6 +29,7 @@ function buttonPress(event){
 }
 // pushes final value to input, and joins values as a string and pushes the final input to the display
 function createDisplay(val){
+	console.log('digit');
 	input.push(val);
 	finalInput = input.join("");
 	$('.display').val(finalInput);
@@ -71,9 +72,10 @@ function operand(operator){
 		}
 		input=[];
 	}else{
-		console.log(" pushing input to inputs");
 		inputs.push(finalInput);
 		input=[];
+		finalInput=null;
+		console.log('end parentheses');
 	}
 	
 }
@@ -93,35 +95,52 @@ function clearDisplay(){
 function evaluate(){
 	$(this).blur();
 	// var equals=$(this).data("action");
-	inputs.push(finalInput);
+	if(finalInput !== null){
+		inputs.push(finalInput);
+		console.log('running');
+	}
+	
 	console.log(operators);
 	console.log(inputs);
 	// this code creates the equation
 	for(var i = 0 ; i<operators.length;i++){
+		if(inputs[i] === null){
+			inputs.splice(i,1);
+			console.log('deleting null')
+		}
 		if(operators[i-1] ==")"){
 			equation+=operators[i]+inputs[i];
 			console.log("special case parentheses");
 		}else{
-			// console.log("this is running");
+			
 			if(operators[i]=="("){
-				console.log("opening equation detected");
+				console.log("opening parentheses detected");
 				if(inputs[i+1]===""){
 					console.log("special case operator syntax omitted");
 					equation+=inputs[i]+"*"+operators[i];
 					inputs.splice(i,1);
 				}else{
 					equation+=operators[i]+inputs[i];
-					console.log("regular test case one")
+					console.log("regular test case one");
 				}
 			}else{
 				equation =equation+inputs[i]+operators[i];
-				console.log("regular test case two")
+				console.log("regular test case two");
 			}
+			// end condition
 			if(i==operators.length-1 && operators[i]!==")"){
 				equation=equation+inputs[i+1];
+				console.log("one.one");
 			}
-			if(operators[i] ==")"){
+			// end condition
+			if(operators[i] ==")" && operators[i+1] !== undefined&& inputs[i+1] !== null){
 				equation+=operators[i]+inputs[i+1];
+				console.log("one.two");
+			}
+			// end condition
+			if(operators[i] ==")" && operators[i+1] === undefined && inputs[i+1] !== undefined){
+				equation+='*'+inputs[i+1];
+				console.log('adding multiplication sign');
 			}
 		}
 	}

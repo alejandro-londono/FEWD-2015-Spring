@@ -1,0 +1,141 @@
+h1{
+	font-family: 'Roboto', sans-serif;
+}
+h2,h3,h4,h5,h6{
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+}
+
+
+.logo, .tag, .sync, .map, .google-play, .app-store, .amazon{
+	background-image: url(../images/icon_sprite.png);
+	background-repeat: no-repeat;
+}
+.tag, .sync, .map{
+	width: 80px;
+	height:70px;
+	margin:0 auto;
+}
+.tag{
+	background-position: 0px -120px;
+}
+.sync{
+	background-position: -80px -120px;
+}
+.map{
+	background-position: -152px -120px;
+}
+.logo{
+	width:60px;
+	height:60px;
+	
+}
+.header, .logo{
+	display:inline-block;
+}
+.header{
+	position:relative;
+	top:-20px;
+}
+
+.total-logo{
+	margin-top:40px;
+}
+.cell{
+	overflow: hidden;
+	max-height: 180px;
+	margin-bottom: 20px;
+}
+.intro{
+	background-image: url(../images/intro_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.intro h2{
+	font-weight:300;
+	color:#fff;
+	font-size: 70px;
+	margin:30px 0;
+}
+.intro p{
+	font-size:20px;
+	color:#fff;
+	line-height: 40px;
+	font-weight:300;	
+}
+a{
+	text-decoration: none;
+	color:#e77304;
+	text-transform: uppercase;
+	padding:15px;
+	background-color: #fff;
+	border-radius: 3px;
+	font-family:  'Roboto', sans-serif;
+	font-weight: 300;
+}
+.shot{
+	padding-bottom: 100px
+}
+.phone{
+	background-image: url(../images/intro_phone.png);
+	background-repeat:no-repeat;
+	height:510px;
+	position:absolute;
+	top:20px;
+	left:713px;
+}
+.pro{
+	font-weight: 300;
+}
+.features div{
+	text-align: center;
+}
+.features h3{
+	color:#e77304;
+	font-family:  'Roboto', sans-serif;
+	font-weight: 300;
+}
+.features{
+	margin: 100px 0;
+}
+.gallery{
+	background-color: #eee;
+	padding:100px;
+}
+.gallery h4{
+	font-size: 36px;
+	font-weight: 300;
+	color:#2b3f4c;
+	text-transform: none;
+}
+.download h3{
+	color: #e77e04;
+	font-size: 42px;
+	font-weight: 300;
+	text-transform: none;
+}
+.download p{
+	font-size: 18px;
+}
+.download h3, .download p, .social{
+	text-align: center;
+}
+.google-play, .app-store, .amazon{
+	height:50px;
+	width:170px;
+	display: inline-block;
+	background-color: black;
+	border-radius: 5px;
+}
+.app-store{
+	background-position:-20px -195px;
+}
+.google-play{
+	background-position:-20px -255px;
+}
+.amazon{
+	background-position:-20px -315px;
+}
+.border{
+	border:1px #222 solid;
+}
